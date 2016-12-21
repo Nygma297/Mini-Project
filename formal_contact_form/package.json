@@ -1,0 +1,13 @@
+{
+  "name": "formal_contact_form",
+  "version": "1.0.0",
+  "description": "",
+  "main": "model.js",
+  "scripts": {
+    "start": "node post.js"
+    "dev": "nodemon post.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
