@@ -79,7 +79,7 @@ input[type="submit"] {
 	-ms-transition: 0.5s all;
 	cursor:pointer;
 	font-family: 'open sans',sans-serif;
-}input[type="button"] {
+}button[type="button"] {
     padding: 13px 80px;
     background: #a07650;
     border: none;
@@ -95,6 +95,9 @@ input[type="submit"] {
 	font-family: 'open sans',sans-serif;
 }
 input[type="submit"]:hover{
+	background:#000;
+}
+button[type="button"]:hover{
 	background:#000;
 }
 .email{
@@ -142,10 +145,15 @@ p.para {
 @media (max-width: 1440px){
 	input[type="submit"] {
 		margin: 50px 0 0 155px;
+	}button[type="button"] {
+		margin: 50px 0 0 155px;
 	}
 }
 @media (max-width: 1366px){
 	input[type="submit"] {
+		margin: 50px 0 0 139px;
+	}
+	button[type="button"] {
 		margin: 50px 0 0 139px;
 	}
 }
@@ -154,6 +162,9 @@ p.para {
 		margin: 50px 0px 100px 0px;
 	}
 	input[type="submit"] {
+		margin: 50px 0 0 125px;
+	}
+	button[type="button"] {
 		margin: 50px 0 0 125px;
 	}
 	.footer-w3l {
@@ -216,12 +227,19 @@ p.para {
 		margin: 50px 0 0 110px;
 		padding: 13px 70px;
 	}
+	button[type="button"] {
+		margin: 50px 0 0 110px;
+		padding: 13px 70px;
+	}
 }
 @media (max-width: 768px){
 	.left .fa {
 		margin-right: 13px;
 	}
 	input[type="submit"] {
+		margin: 50px 0 0 101px;
+	}
+	button[type="button"] {
 		margin: 50px 0 0 101px;
 	}
 }
@@ -238,12 +256,18 @@ p.para {
 	input[type="submit"] {
 		padding: 13px 61px;
 	}
+	button[type="button"] {
+		padding: 13px 61px;
+	}
 }
 @media (max-width:667px){
 	.left .fa {
 		margin-right: 5px;
 	}
 	input[type="submit"] {
+		padding: 13px 51px;
+	}
+	button[type="button"] {
 		padding: 13px 51px;
 	}
 }
@@ -261,12 +285,18 @@ p.para {
 	input[type="submit"] {
 		padding: 13px 46px;
 	}
+	button[type="button"] {
+		padding: 13px 46px;
+	}
 }
 @media (max-width:600px){
 	.left .fa {
 		font-size: 16.8px;
 	}
 	input[type="submit"] {
+		padding: 12px 40px;
+	}
+	button[type="button"] {
 		padding: 12px 40px;
 	}
 }
@@ -296,6 +326,10 @@ p.para {
 		padding: 12px 50px;
 		margin: 50px 0 0 221px;
 	}
+	button[type="button"] {
+		padding: 12px 50px;
+		margin: 50px 0 0 221px;
+	}
 }
 @media (max-width: 414px){
 	h1 {
@@ -311,6 +345,9 @@ p.para {
 	input[type="submit"] {
 		margin: 50px 0 0 178px;
 	}
+	button[type="button"] {
+		margin: 50px 0 0 178px;
+	}
 }
 @media (max-width: 384px){
 	h1 {
@@ -320,6 +357,9 @@ p.para {
 		font-size: 19px;
 	}
 	input[type="submit"] {
+		margin: 50px 0 0 158px;
+	}
+	button[type="button"] {
 		margin: 50px 0 0 158px;
 	}
 	.footer-w3l p {
@@ -340,6 +380,10 @@ p.para {
 		width: 72%;
 	}
 	input[type="submit"] {
+		padding: 10px 35px;
+		margin: 40px 0 0 127px;
+	}
+	button[type="button"] {
 		padding: 10px 35px;
 		margin: 40px 0 0 127px;
 	}
