@@ -4,10 +4,16 @@
   "description": "",
   "main": "model.js",
   "scripts": {
-    "start": "node post.js"
-    "dev": "nodemon post.js"
+    "start": "node post.js",
+     "dev": "nodemon post.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2"
+  }
 }
