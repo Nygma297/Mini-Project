@@ -72,15 +72,25 @@ app.post('/data2', function(req, res) {
     }
   });
 });
+//*/
 
-app.delete('/book/:id', function(req, res) {
-  Book.findOneAndRemove({
-    _id: req.params.id
-  }, function(err, book) {
+app.put('/contact/:id', function(req, res){
+	Contact.findOneAndUpdate({name: req.params.name}, {$set:{name:req.body.n_name, email: req.body.email, mobile: req.body.mobile}}, {upsert:false}, function(err, data){
+			if(err){
+				console.log('Error Encountered!')
+			}else{
+				console.log(data);
+				res.send(204);
+			}
+	})
+}) 
+
+app.delete('/contact/:id', function(req, res) {
+  Contact.findOneAndRemove({name: req.params.name}, function(err, data) {
     if(err) {
       res.send('error removing')
     } else {
-      console.log(book);
+      console.log(data);
       res.status(204);
     }
   });
