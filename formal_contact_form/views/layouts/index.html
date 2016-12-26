@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Contact Book</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="icon" href="images/pb.png">
+		<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+		<link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all" />		
+	</head>
+
+	<body>
+		<div class="container">
+			<h1>Contact Book</h1>
+			<div class="contact">
+
+				<div class="right-w3">
+					<p class="para">Designed to store your contacts into space.</p>
+					<p>Give us the Cell Number,</p>
+					<p>The Email</p>
+					<p>The Contact's Name.</p>
+					<p>And We'll save it for you!</p>
+					<h2>We allow you to store without logging in.</h2>
+				</div>
+				<form action="http://localhost:8081/data" method="POST">
+					<div class="left">
+						<div class="name">
+							<i class="fa fa-user" aria-hidden="true"></i>
+							<input type="text" name="name" class="name" placeholder="Contact Name" required="">
+						</div>
+						<div class="email">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+							<input type="text" name="email" class="email" placeholder="Contact's Email" required="">
+						</div>
+						<div class="phone">
+							<i class="fa fa-phone" aria-hidden="true"></i>
+							<input type="text" name="mobile" class="phone" placeholder="Contact's Cell Number" required="">
+						</div>
+						<input type="submit" value="Store">
+					</div>
+				</form>
+				<div class="clear"></div>
+				<div class="clear"></div>
+				<div class="right-w3">
+					<h2>Everybody needs Options here are some of yours!</h2>
+					<button type = "button" onclick="window.location='http://localhost:8081/x'">View Data</button>
+					<br/><button type = "button" onclick="window.location='delete.html'">Remove a contact</button>
+					<br/><button type = "button" onclick="window.location='update.html'">Update a contact</button>
+				</div>
+
+				<div class="clear"></div>
+			</div>
+		</div>
+	</body>
+</html>
