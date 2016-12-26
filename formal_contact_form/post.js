@@ -35,11 +35,19 @@ app.get('/contacts', function(req, res) {
 
 
 
-app.get('/contacts/:id', function(req, res) {
-  console.log('getting all contacts');
-  Contact.findOne({
-    _id: req.params.id
-    })
+app.get('/contacts2', function(req, res) {
+  console.log('Removing the specified contact!');
+  Contact.findOne({ name: req.body.name}, function(err, data){
+    if(err){
+      return console.error(err);
+    }else{
+      Conatct.remove(function(err){
+        if(err){
+          return console.error(err);
+        }
+      })
+    }
+  })
     .exec(function(err, contacts) {
       if(err) {
         res.send('error occured')
